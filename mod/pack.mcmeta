@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "name": "Create: Break It All",
+        "id": "cr_bia",
+        "version": "1.0.0",
+        "authors": [
+            "IEatSoulsMeow"
+        ],
+        "description": "C:BIA makes most non-natural block breakable with the wrench"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "quilt_loader": {
+        "depends": [
+            {
+                "id": "quilt_resource_loader",
+                "unless": "fabric-resource-loader-v0",
+                "versions": "*"
+            }
+        ],
+        "group": "com.modrinth",
+        "id": "cr_bia",
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "metadata": {
+            "contact": {
+                "homepage": "https://modrinth.com/datapack/create-break-it-all",
+                "issues": "https://github.com/ieatsoulsmeow/Create-Break-It-All/issues",
+                "sources": "https://github.com/ieatsoulsmeow/Create-Break-It-All"
+            },
+            "contributors": {
+                "IEatSoulsMeow": "Developer"
+            },
+            "description": "C:BIA makes most non-natural block breakable with the wrench",
+            "icon": "pack.png",
+            "name": "Create: Break It All"
+        },
+        "version": "1.0.0"
+    },
+    "schema_version": 1
+}

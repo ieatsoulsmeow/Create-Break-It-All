@@ -1,0 +1,21 @@
+{
+    "authors": [
+        "IEatSoulsMeow"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/datapack/create-break-it-all",
+        "issues": "https://github.com/ieatsoulsmeow/Create-Break-It-All/issues",
+        "sources": "https://github.com/ieatsoulsmeow/Create-Break-It-All"
+    },
+    "depends": {
+        "fabric-resource-loader-v0": "*"
+    },
+    "description": "C:BIA makes most non-natural block breakable with the wrench",
+    "environment": "*",
+    "icon": "pack.png",
+    "id": "cr_bia",
+    "license": "MIT",
+    "name": "Create: Break It All",
+    "schemaVersion": 1,
+    "version": "1.0.0"
+}
