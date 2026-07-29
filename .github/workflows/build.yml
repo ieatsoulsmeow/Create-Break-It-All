@@ -30,12 +30,12 @@ jobs:
       - name: Mod jar
         run: |
           cd mod
-          zip -r "../create_break_it_all_${VERSION}.jar" mod/*
+          zip -r "../create_break_it_all_${VERSION}.jar" .
 
       - name: Datapack zip
         run: |
           cd datapack
-          zip -r "../create_break_it_all_${VERSION}.zip" datapack/*
+          zip -r "../create_break_it_all_${VERSION}.zip" .
 
       - name: Upload files
         uses: actions/upload-artifact@v4
