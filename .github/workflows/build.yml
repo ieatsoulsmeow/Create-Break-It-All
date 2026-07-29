@@ -1,0 +1,44 @@
+name: Bundle Mod and Datapack
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set version variable
+        id: version
+        run: |
+          VERSION=$(jq -r '.pack.version' datapack/pack.mcmeta)
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "Detected version: $VERSION"
+
+      - name: Mod jar
+        run: |
+          zip -r "create_break_it_all_${VERSION}.jar" mod/*
+
+      - name: Datapack zip
+        run: |
+          zip -r "create_break_it_all_${VERSION}.zip" datapack/*
+
+      - name: Upload files
+        uses: actions/upload-artifact@v4
+        with:
+          name: create_break_it_all_${{ env.VERSION }}
+          path: |
+            create_break_it_all_${{ env.VERSION }}.jar
+            create_break_it_all_${{ env.VERSION }}.zip
