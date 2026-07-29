@@ -1,0 +1,14 @@
+{
+	"values": [
+		"#computercraft:computer",
+		"#computercraft:monitor",
+		"#computercraft:turtle",
+		"#computercraft:wired_modem",
+		"computercraft:disk_drive",
+		"computercraft:printer",
+		"computercraft:redstone_relay",
+		"computercraft:speaker",
+		"computercraft:wireless_modem_advanced",
+		"computercraft:wireless_modem_normal"
+	]
+}
